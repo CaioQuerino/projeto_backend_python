@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Cadastro de Cliente</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Cliente</h1>
+        
+        <div id="mensagem"></div>
+        
+        <form id="formCadastro">
+            <fieldset class="dados_pessoais">
+                <legend>Dados Pessoais</legend>
+
+                <div class="separador">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="separador">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="separador">
+                    <label for="number">Telefone</label>
+                    <input type="tel" name="number" id="number" required 
+                           placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="separador">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" required 
+                           placeholder="000.000.000-00">
+                </div>
+
+                <div class="separador">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+
+                <div class="separador">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required 
+                           placeholder="Mínimo 6 caracteres">
+                </div>
+
+                <div class="separador">
+                    <label for="password_c">Repita a senha</label>
+                    <input type="password" name="password_c" id="password_c" required>
+                </div>
+
+                <div class="separador_b">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- JavaScript externo -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

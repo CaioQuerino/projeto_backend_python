@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    width: 100%;
+    
+    & fieldset {
+        background-color: rgb(204, 235, 235);
+        border: 2px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    & input {
+        width: 100%;
+        display: grid;
+        border-radius: 5px;
+    }
+
+    & .separador{
+        display: grid;
+        padding: 10px;
+    }
+
+    & legend {
+        background-color: bisque;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid #000;
+    }
+}

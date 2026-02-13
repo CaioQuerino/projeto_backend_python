@@ -1,0 +1,21 @@
+# Framework Web
+Flask==3.1.0
+Flask-CORS==5.0.0
+
+# Banco de Dados
+SQLAlchemy==2.0.36
+PyMySQL==1.1.1
+cryptography==43.0.3
+
+# Segurança
+bcrypt==4.2.1
+
+# Variáveis de Ambiente
+python-dotenv==1.0.1
+
+# Utilitários
+Werkzeug==3.1.3
+Jinja2==3.1.4
+itsdangerous==2.2.0
+click==8.1.7
+blinker==1.9.0
