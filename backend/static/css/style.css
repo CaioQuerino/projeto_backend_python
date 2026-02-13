@@ -15,6 +15,7 @@ body {
 
 form {
     display: grid;
+    padding: 15px;
     width: 100%;
 
     & label {
@@ -60,6 +61,7 @@ form {
 
             &:hover{
                 background-color: rgb(248, 215, 174);
+                cursor: pointer;
                 font-weight: bold;
             }
         }
@@ -81,5 +83,12 @@ form {
             background-color: rgb(241, 208, 166);
             transition: ease-in .2s;
         }
+    }
+}
+
+@media(max-width: 764px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
