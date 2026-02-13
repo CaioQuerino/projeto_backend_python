@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -15,18 +16,53 @@ body {
 form {
     display: grid;
     width: 100%;
+
+    & label {
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+
+        & span {
+            color: rgb(189, 69, 69);
+        }
+    }
     
     & fieldset {
         background-color: rgb(204, 235, 235);
         border: 2px solid #000;
         border-radius: 5px;
         padding: 10px;
+
+        &:hover {
+            background-color: rgb(158, 219, 219);
+            transition: ease-in .2s;
+        }
     }
 
     & input {
         width: 100%;
         display: grid;
         border-radius: 5px;
+        padding: 5px;
+        border: 2px solid #000000;
+        outline: 0;
+    }
+
+    .separador_b {
+        display: flex; 
+        justify-content: center;
+        gap: 10px;
+
+        & button {
+            padding: 5px;
+            background-color: bisque;
+            border: 1px solid #000000;
+            border-radius: 5px;
+
+            &:hover{
+                background-color: rgb(248, 215, 174);
+                font-weight: bold;
+            }
+        }
     }
 
     & .separador{
@@ -39,5 +75,11 @@ form {
         padding: 5px;
         border-radius: 10px;
         border: 2px solid #000;
+
+        &:hover {
+            font-weight: 600;
+            background-color: rgb(241, 208, 166);
+            transition: ease-in .2s;
+        }
     }
 }
